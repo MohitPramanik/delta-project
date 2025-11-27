@@ -1,0 +1,29 @@
+<% layout("/layouts/boilerPlate") %>
+
+<div class="row mt-3">
+    <div class="col-md-6 col-12 mx-auto">
+        <h1>SignUp on Wanderlust</h1>
+        <form action="/signup" method="POST" class="needs-validation d-flex flex-column gap-3 my-3" novalidate>
+            <div>
+                <label class="form-label" for="username">Username</label>
+                <input type="text" name="username" id="username"
+                    placeholder="Enter username" class="form-control" required>
+                <div class="invalid-feedback">This is a required field</div>
+            </div>
+            <div>
+                <label class="form-label" for="email">Email</label>
+                <input type="email" name="email" id="email"
+                    placeholder="Enter email" class="form-control" required>
+                <div class="invalid-feedback">This is a required field</div>
+            </div>
+            <div>
+                <label class="form-label" for="password">Password</label>
+                <input type="password" name="password" id="password"
+                    placeholder="Enter password" class="form-control" required>
+                <div class="invalid-feedback">This is a required field</div>
+            </div>
+
+            <button class="btn btn-success">Sign up</button>
+        </form>
+    </div>
+</div>
